@@ -19,6 +19,7 @@ html{
 .flex{
     display: flex;
     flex-wrap: wrap;
+    flex:1;
 }
 .flex-align-center{
     /*justify-content: center;*/
@@ -48,7 +49,8 @@ html{
 }
 
 .section-body header{
-    flex-basis: 15%;
+/*    flex-basis: 15%;*/
+    flex:0.15;
     padding:0 2.5rem;
 }
 .section-body header nav{
@@ -179,12 +181,32 @@ html{
     font-size: 2rem;
 }
 
+/*ref: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp*/
 #section-videoDemo{
-    
+    width: 50rem;
 }
+.section-vidBox{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%;
+}
+.section-vidBox iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;    
+}
+/*//////////////////////////////////////////////////////////////////////*/
 
 /* <1440px */
 @media (max-width: 90em){
+    #section-videoDemo{
+        width: 40rem;
+    }        
     .section-work img{
         max-width: 50rem;
     }
@@ -192,6 +214,9 @@ html{
 
 /* <1220px*/
 @media (max-width: 76.25em){
+    #section-videoDemo{
+        width: 35rem;
+    }      
     .section-work img{
         max-width: 35rem;
     }
@@ -202,6 +227,7 @@ html{
 
 /* <890px */
 @media (max-width: 55.625em){
+
     .section-body{
         flex-direction: column;
     }
@@ -216,6 +242,8 @@ html{
     .section-body header, header nav, header div, header nav div,.logo, .logo a, .links-nav, .links-nav a{
         flex-direction: row;
         margin-bottom: 0rem;
+        flex-wrap: nowrap;
+        white-space: nowrap;
     } 
     .logo{
         margin-right: 1rem;
@@ -244,6 +272,9 @@ html{
 
 /* <775px */
 @media (max-width: 48.4375em){
+    #section-videoDemo{
+        width: 100%;
+    }      
     .section-galleryWork{
         flex-direction: column;
         align-items: flex-start;
@@ -261,13 +292,23 @@ html{
 }
 
 /* <586*/
-@media (max-width: 37.25em){
+@media (max-width: 37.25em){   
     .section-body header,.section-body header nav{
         justify-content: center;
 /*        width: 100%;*/
     }
+    .section-body{
+        padding-top: 1rem;
+    }
+    .section-body header{
+        padding-bottom: 0;
+    }
+    header nav{
+        flex-direction: column;
+    }
     header nav div{
         margin-bottom: 1rem !important;
+        flex:1 1 100%;
     }
     .links-external-small{
         margin-left: 0;
