@@ -41,20 +41,20 @@ html{
 }
 /*/////////////////////////////////////////////////////////*/
 
-body{
+.section-body{
     flex-wrap: nowrap !important;
     padding:3rem 0;
     flex-direction: row;
 }
 
-body header{
+.section-body header{
     flex-basis: 15%;
     padding:0 2.5rem;
 }
-body header nav{
+.section-body header nav{
     position: fixed;
 }
-body header, header nav, header div, header nav div{
+.section-body header, header nav, header div, header nav div{
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -179,6 +179,10 @@ body header, header nav, header div, header nav div{
     font-size: 2rem;
 }
 
+#section-videoDemo{
+    
+}
+
 /* <1440px */
 @media (max-width: 90em){
     .section-work img{
@@ -198,18 +202,18 @@ body header, header nav, header div, header nav div{
 
 /* <890px */
 @media (max-width: 55.625em){
-    body{
+    .section-body{
         flex-direction: column;
     }
-    body header{
+    .section-body header{
         flex-basis: 0;
         padding:1rem 2.5rem;
     }
-    body header nav{
+    .section-body header nav{
         position: inherit;
         align-items: center;
     }
-    body header, header nav, header div, header nav div,.logo, .logo a, .links-nav, .links-nav a{
+    .section-body header, header nav, header div, header nav div,.logo, .logo a, .links-nav, .links-nav a{
         flex-direction: row;
         margin-bottom: 0rem;
     } 
@@ -258,11 +262,13 @@ body header, header nav, header div, header nav div{
 
 /* <586*/
 @media (max-width: 37.25em){
-    body header,body header nav{
+    .section-body header,.section-body header nav{
         justify-content: center;
-        width: 100%;
+/*        width: 100%;*/
     }
-
+    header nav div{
+        margin-bottom: 1rem !important;
+    }
     .links-external-small{
         margin-left: 0;
     }
