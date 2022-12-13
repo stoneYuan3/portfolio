@@ -20,11 +20,11 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
-.flex_align_center{
+.flex-align-center{
     /*justify-content: center;*/
     align-items: center;
 }
-.flex_justify_center{
+.flex-justify-center{
     justify-content: center;
 }
 .flex_space_between{
@@ -56,6 +56,16 @@ body header, header nav, header div, header nav div{
     text-align: center;
     flex-direction: column;
 }
+
+
+.style-selected{
+/*    background-color: #3A3A3A;
+    color:white;
+    border-radius: 1rem;*/
+    border-bottom: 3px solid #3A3A3A;
+}
+
+
 .logo{
      margin-bottom: 3rem;   
 }
@@ -71,7 +81,8 @@ body header, header nav, header div, header nav div{
 }
 
 .links-nav a{
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
+    padding: 0.5rem 1rem;
 }
 
 .section-main{
@@ -83,7 +94,6 @@ body header, header nav, header div, header nav div{
     margin-bottom: 1.5rem;
 }
 
-
 .section-galleryWork{
     margin-bottom: 2.5rem;
     justify-content: center;
@@ -92,7 +102,7 @@ body header, header nav, header div, header nav div{
 }
 .section-galleryWork h2{
     font-size: 2.5rem;
-    max-width: 20rem;
+    max-width: 25rem;
     margin-bottom: 1rem;
 }
 .section-galleryWork p{
@@ -106,4 +116,33 @@ body header, header nav, header div, header nav div{
 }
 .section-galleryWork a:hover,.section-galleryWork a:focus,.section-galleryWork a:active{
     opacity: 0.75;
+}
+
+
+.section-work{
+    flex-wrap: nowrap;
+}
+.section-work p{
+    max-width: 50rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+/*    font-family: "Adobe Garamond Pro";*/
+}
+.section-work img{
+    max-width: 60rem;
+    height: 100%;
+    margin-bottom: 0.5rem;
+}
+.section-work a img{
+    width: 1.5rem;
+    height: 100%;
+    margin-right: 0.5rem;
+}
+
+.section-work-basics{
+    margin:2rem 0;
+}
+.section-work-basics p{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
 }
