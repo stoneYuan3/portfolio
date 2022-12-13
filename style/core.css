@@ -1,0 +1,109 @@
+/*////////////OVERWRITE DEFAULT STYLES/////////////////////*/
+html{font-family:Helvetica,sans-serif;}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{ margin:0; padding:0;}
+
+ul, ol{ list-style:none;}
+
+a{ text-decoration: none;color: black; }
+
+ul li{ word-break: break-all; }
+/*/////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////*/
+html{
+    background-color: #FAFAFA;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex_align_center{
+    /*justify-content: center;*/
+    align-items: center;
+}
+.flex_justify_center{
+    justify-content: center;
+}
+.flex_space_between{
+    justify-content: space-between;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-full{
+    flex: 1;
+}
+/*/////////////////////////////////////////////////////////*/
+
+body{
+    flex-wrap: nowrap !important;
+    padding:3rem 0;
+    flex-direction: row;
+}
+
+body header{
+    flex-basis: 15%;
+    padding:0 2.5rem;
+}
+body header, header nav, header div, header nav div{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.logo{
+     margin-bottom: 3rem;   
+}
+.logo img{
+    width:2rem;
+    height: 100%;
+}
+.logo a{
+    margin-bottom: 1rem;
+}
+.logo p{
+    font-weight: bold;
+}
+
+.links-nav a{
+    margin-bottom: 2rem;
+}
+
+.section-main{
+    flex-wrap: nowrap;
+}
+.section-main h1{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.section-galleryWork{
+    margin-bottom: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.section-galleryWork h2{
+    font-size: 2.5rem;
+    max-width: 20rem;
+    margin-bottom: 1rem;
+}
+.section-galleryWork p{
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+.section-galleryWork img{
+    width:18rem;
+    height: 12rem;
+    margin-right: 3rem;
+}
+.section-galleryWork a:hover,.section-galleryWork a:focus,.section-galleryWork a:active{
+    opacity: 0.75;
+}
