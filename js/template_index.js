@@ -4,6 +4,7 @@ var gallery_riskmap_2022=`
 		<a href="work.html?work=riskmap"><img src="img/banner-riskmap.png"></a>
 		<div class="flex flex-column">
 			<h2>529 Garage Risk Map Project</h2>
+			<p id="work-type" class="p-type">Full Stack Website</p>
 			<p>HTML | CSS | JQuery | PHP | MySQL</p>
 			<p>School Project, Individual, 2022</p>
 		</div>
@@ -12,9 +13,10 @@ var gallery_riskmap_2022=`
 var gallery_garage_2022=`
 
 	<section class="flex flex-row section-galleryWork">
-		<a href=""><img src="img/banner-garage.png"></a>
+		<a href="work.html?work=garage"><img src="img/banner-garage.png"></a>
 		<div class="flex flex-column">
 			<h2>Garage, Artwork Sharing Platform</h2>
+			<p id="work-type" class="p-type">Full Stack Website</p>
 			<p>HTML | CSS | JQuery | PHP | MySQL</p>
 			<p>School Project, Group, 2022</p>
 		</div>
@@ -26,6 +28,7 @@ var gallery_frontendIntern_2020=`
 		<a href=""><img src="img/gallery-projPrev-default.png"></a>
 		<div class="flex flex-column">
 			<h2>Website Frontend Layout Development </h2>
+			<p id="work-type" class="p-type">Frontend Website</p>
 			<p>HTML | CSS </p>
 			<p>Internship, Individual, 2020</p>
 		</div>

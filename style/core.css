@@ -42,6 +42,18 @@ html{
 }
 /*/////////////////////////////////////////////////////////*/
 
+.p-type{
+    border:2px solid black;
+    padding:0.25rem 1.5rem;
+    font-size: 1rem !important;
+    margin-bottom: 1.75rem !important;
+    width: 9rem;
+    text-align: center;
+}
+.section-galleryWork .p-type{
+    margin-bottom: 1rem !important;
+}
+
 .section-body{
     flex-wrap: nowrap !important;
     padding:3rem 0;
@@ -132,7 +144,7 @@ html{
     flex-wrap: nowrap;
 }
 .section-galleryWork h2{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     max-width: 25rem;
     margin-bottom: 1rem;
 }
@@ -183,7 +195,7 @@ html{
     margin:2rem 0;
 }
 .section-work-basics p{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-size: 2rem;
 }
 
@@ -227,7 +239,7 @@ html{
 .section-mybio h2{
     margin-top: 0;
     margin-bottom: 1.25rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .section-mybio p{
     margin:0;
