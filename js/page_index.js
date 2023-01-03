@@ -18,7 +18,8 @@ if(workName==null){
 	link_about.classList.remove('style-selected');
 	link_resume.classList.remove('style-selected');
 
-	var arr_work_list=[gallery_riskmap_2022,gallery_garage_2022,gallery_frontendIntern_2020];
+	// var arr_work_list=[gallery_riskmap_2022,gallery_garage_2022,gallery_frontendIntern_2020];
+	var arr_work_list=[gallery_riskmap_2022,gallery_garage_2022];
 	var worklist="";
 	for(let i=0;i<arr_work_list.length;i++){
 		worklist+=arr_work_list[i];
