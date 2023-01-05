@@ -254,8 +254,13 @@ html{
     margin-right: 1rem;
 }
 
-
-
+.section-resume{
+    margin-right: 15rem;
+}
+.section-resume img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
 
 
 /* <1440px */
@@ -288,7 +293,9 @@ html{
 
 /* <890px */
 @media screen and (max-width: 55.625em){
-
+    .section-resume{
+        margin-right: 0rem;
+    }
     .section-body{
         flex-direction: column;
     }

@@ -62,3 +62,10 @@ var about=`
 	</div>
 
 `;
+
+var resume=`
+	<section class="flex flex-column section-resume">
+		<img src="img/resume/resume-23-1-p1.png">
+		<img src="img/resume/resume-23-1-p2.png">
+	</section>
+`;

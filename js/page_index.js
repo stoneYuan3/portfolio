@@ -48,6 +48,6 @@ else if(workName=='resume'){
 	link_resume.classList.add('style-selected');
 
 	//equal to $('.section-contentDisplay').html(about); in JQuery
-	section_showRoom.innerHTML='';
+	section_showRoom.innerHTML=resume;
 
 }
