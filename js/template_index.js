@@ -22,6 +22,18 @@ var gallery_garage_2022=`
 		</div>
 	</section>
 `;
+var gallery_javagame_2020=`
+
+	<section class="flex flex-row section-galleryWork">
+		<a href="work.html?work=edusim"><img src="img/banner-edusim.png"></a>
+		<div class="flex flex-column">
+			<h2>PRC Education Simulator</h2>
+			<p id="work-type" class="p-type">Java Mini Game</p>
+			<p>Java</p>
+			<p>School Project, Individual, 2020</p>
+		</div>
+	</section>
+`;
 
 var gallery_frontendIntern_2020=`
 	<section class="flex flex-row section-galleryWork">
