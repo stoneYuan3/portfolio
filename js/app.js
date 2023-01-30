@@ -23,6 +23,10 @@ ReactDOM.render( /*#__PURE__*/React.createElement(React.StrictMode, null, /*#__P
 
 switch(target){
   case null:
+    document.getElementById("link-gallery").classList.add("style-selected");
+    document.getElementById("link-about").classList.remove("style-selected");
+    document.getElementById("link-resume").classList.remove("style-selected");    
+
     ReactDOM.render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(React.StrictMode, null, 
       /*#__PURE__*/React.createElement(WorkPrev, {
         href: "index.html?content=riskmap",
@@ -52,6 +56,10 @@ switch(target){
     break;
 
   case "about":
+    document.getElementById("link-about").classList.add("style-selected");
+    document.getElementById("link-gallery").classList.remove("style-selected");
+    document.getElementById("link-resume").classList.remove("style-selected");    
+
     page_title.innerHTML='About Me';
     sendXHR("GET", "./articles/about.txt", null, (response)=>{
       section_showRoom.innerHTML=response;
@@ -60,6 +68,10 @@ switch(target){
     break;
 
   case "resume":
+    document.getElementById("link-resume").classList.add("style-selected");
+    document.getElementById("link-gallery").classList.remove("style-selected");
+    document.getElementById("link-about").classList.remove("style-selected");  
+
     page_title.innerHTML='Resume';
     sendXHR("GET", "./articles/resume.txt", null, (response)=>{
       section_showRoom.innerHTML=response;
@@ -113,5 +125,10 @@ switch(target){
       document.getElementById('section-work-body').innerHTML=response;
     });
     break;
+}
 
+if( !(target == null || target == "about" || target=="resume") ){
+    document.getElementById("link-resume").classList.remove("style-selected");
+    document.getElementById("link-gallery").classList.remove("style-selected");
+    document.getElementById("link-about").classList.remove("style-selected");  
 }
