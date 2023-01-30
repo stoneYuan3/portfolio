@@ -1,20 +1,8 @@
-// import MyComponent from "./nav.js"
-// require("./components/index_workPrev.js");
-
-// import workPrev from "./components/index_workPrev.js";
-
-// import WorkPreview from './components/index_workPrev';
-
-// const fs=require('fs');
-// import * as fs from './fs';
 
 const urlParams = new URLSearchParams(window.location.search);
 const target = urlParams.get('content');
 
 var page_title=document.getElementsByTagName('h1')[0];
-var link_gallery=document.getElementById('link-gallery');
-var link_about=document.getElementById('link-about');
-var link_resume=document.getElementById('link-resume');
 
 var section_showRoom=document.getElementsByClassName('section-contentDisplay')[0];
 
@@ -127,39 +115,3 @@ switch(target){
     break;
 
 }
-
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//   <Navigation/>
-//   </React.StrictMode>,
-//   document.getElementById("react_nav")
-// );
-
-// ReactDOM.render(
-//   <React.Fragment>
-//       <React.StrictMode>
-
-//   <WorkPrev
-//     href="work.html?work=riskmap"
-//     imgSrc="img/banner-riskmap.png"
-//     title="529 Garage Risk Map Project"
-//     type="Full Stack Website"
-//     skills="HTML | CSS | JQuery | PHP | MySQL"
-//     context="School Project, Individual, 2022"
-//   />
-//   <WorkPrev
-//     href="work.html?work=garage"
-//     imgSrc="img/banner-garage.png"
-//     title="Garage, Artwork Sharing Platform"
-//     type="Full Stack Website"
-//     skills="HTML | CSS | JQuery | PHP | MySQL"
-//     context="School Project, Group, 2022"
-//   />
-
-//       </React.StrictMode>
-//   </React.Fragment>,
-//   document.getElementById("root")
-// );
-
-// ReactDOM.render(<MyComponent />, document.getElementById("root"));
