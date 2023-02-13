@@ -136,32 +136,35 @@ switch(target){
 
 switch(galleryPage){
   case null:
-      ReactDOM.render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(React.StrictMode, null, 
-      /*#__PURE__*/React.createElement(WorkPrev, {
-        href: "index.html?content=riskmap",
-        imgSrc: "img/banner-riskmap.png",
-        title: "529 Garage Risk Map Project",
-        type: "Full Stack Website",
-        skills: "HTML | CSS | JQuery | PHP | MySQL",
-        context: "School Project, Individual, 2022"
-      }), 
-      /*#__PURE__*/React.createElement(WorkPrev, {
-        href: "index.html?content=garage",
-        imgSrc: "img/banner-garage.png",
-        title: "Garage, Artwork Sharing Platform",
-        type: "Full Stack Website",
-        skills: "HTML | CSS | JQuery | PHP | MySQL",
-        context: "School Project, Group, 2022"
-      }),
-      /*#__PURE__*/React.createElement(WorkPrev, {
-        href: "index.html?content=edusim",
-        imgSrc: "img/banner-edusim.png",
-        title: "PRC Education Simulator",
-        type: "Java Mini Game",
-        skills: "Java",
-        context: "School Project, Individual, 2020"
-      })
-      )), document.getElementById("root"));
+      if(target==null){
+         ReactDOM.render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(React.StrictMode, null, 
+        /*#__PURE__*/React.createElement(WorkPrev, {
+          href: "index.html?content=riskmap",
+          imgSrc: "img/banner-riskmap.png",
+          title: "529 Garage Risk Map Project",
+          type: "Full Stack Website",
+          skills: "HTML | CSS | JQuery | PHP | MySQL",
+          context: "School Project, Individual, 2022"
+        }), 
+        /*#__PURE__*/React.createElement(WorkPrev, {
+          href: "index.html?content=garage",
+          imgSrc: "img/banner-garage.png",
+          title: "Garage, Artwork Sharing Platform",
+          type: "Full Stack Website",
+          skills: "HTML | CSS | JQuery | PHP | MySQL",
+          context: "School Project, Group, 2022"
+        }),
+        /*#__PURE__*/React.createElement(WorkPrev, {
+          href: "index.html?content=edusim",
+          imgSrc: "img/banner-edusim.png",
+          title: "PRC Education Simulator",
+          type: "Java Mini Game",
+          skills: "Java",
+          context: "School Project, Individual, 2020"
+        })
+        )), document.getElementById("root"));       
+      }
+
       break;
   case "uiux":
     document.getElementById("link-web").classList.remove("style-selected");
@@ -172,6 +175,34 @@ switch(galleryPage){
     document.getElementById("link-web").classList.remove("style-selected");
     document.getElementById("link-uiux").classList.remove("style-selected");
     document.getElementById("link-art").classList.add("style-selected");   
+
+    ReactDOM.render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(React.StrictMode, null, 
+    /*#__PURE__*/React.createElement(WorkPrev, {
+      href: "index.html?content=#",
+      imgSrc: "img/banner-isaBanners.png",
+      title: "Research Institute Website Banners",
+      type: "Graphic Design",
+      skills: "Photoshop",
+      context: "Internship Project, Individual, 2022"
+    }),
+    /*#__PURE__*/React.createElement(WorkPrev, {
+      href: "index.html?content=#",
+      imgSrc: "img/banner-cmcSermon.png",
+      title: "Church Sunday Sermon Posters",
+      type: "Graphic Design",
+      skills: "Photoshop | Illustrator | Tablet Drawing",
+      context: "Volunteer Project, Individual, 2021"
+    }), 
+    /*#__PURE__*/React.createElement(WorkPrev, {
+      href: "index.html?content=#",
+      imgSrc: "img/banner-pmpNewyear.png",
+      title: "New Year Social Media Campaign",
+      type: "Graphic Design",
+      skills: "Photoshop",
+      context: "Internship Project, Individual, 2021"
+    })
+    )), document.getElementById("root"));
+
     break;
 }
 

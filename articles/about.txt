@@ -13,10 +13,7 @@
 				Studying at Simon Fraser University's School of Interactive Arts and Technology(SIAT), a program that combines art <em>(3D Animation, Special Effects, filmmaking)</em>, design <em>(Graphic design, UX Design)</em> and technology <em>(Web Development)</em>.
 			</p>
 			<p>
-				Came into SIAT wanting to become a designer. Found that programming better fits my taste after having several web development and UX design courses. Now working towards a web developer career.
-			</p>
-			<p>
-				Likes to learn more about programming and do handcrafts such as drawing, sewing, 3D modeling and so on in my spare time. Crafting things inspires me, and it doesn’t matter if the outcome is physical or digital.						
+				Have skills in both Web development, UI/UX and graphic design thanks to SIAT's diverse course offerings. Likes to learn more about programming and do handcrafts such as drawing, sewing, 3D modelling and so on in my spare time. Crafting things inspires me, and it doesn’t matter if the outcome is physical or digital.					
 			</p>
 		</section>
 

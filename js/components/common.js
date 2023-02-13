@@ -62,7 +62,7 @@ const Navgallery = () => {
     href: "index.html",
     class: "style-selected",
     id: "link-web"
-  }, "Web Development"), /*#__PURE__*/React.createElement("a", {
+  }, "Programming Related"), /*#__PURE__*/React.createElement("a", {
     href: "index.html?gpage=uiux",
     class: "style-navGallery-selected",
     id: "link-uiux"
