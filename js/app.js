@@ -1,10 +1,38 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const target = urlParams.get('content');
+const galleryPage = urlParams.get('gpage');
 
 var page_title=document.getElementsByTagName('h1')[0];
 
 var section_showRoom=document.getElementsByClassName('section-contentDisplay')[0];
+
+const changeNavStatus = (target)=>{
+
+  switch(target){
+  case "gallery":
+    document.getElementById("link-gallery").classList.add("style-selected");
+    document.getElementById("link-about").classList.remove("style-selected");
+    document.getElementById("link-resume").classList.remove("style-selected"); 
+    break;   
+  case "about":
+    document.getElementById("link-gallery").classList.remove("style-selected");
+    document.getElementById("link-about").classList.add("style-selected");
+    document.getElementById("link-resume").classList.remove("style-selected");    
+    break;
+  case "resume":
+    document.getElementById("link-gallery").classList.remove("style-selected");
+    document.getElementById("link-about").classList.remove("style-selected");
+    document.getElementById("link-resume").classList.add("style-selected");    
+    break;
+  case "none":
+    document.getElementById("link-gallery").classList.remove("style-selected");
+    document.getElementById("link-about").classList.remove("style-selected");
+    document.getElementById("link-resume").classList.remove("style-selected");    
+  }
+
+}
+
 
 function sendXHR(type, url, data, callback) {
   var newXHR = new XMLHttpRequest() || new window.ActiveXObject("Microsoft.XMLHTTP");
@@ -21,44 +49,25 @@ function sendXHR(type, url, data, callback) {
 
 ReactDOM.render( /*#__PURE__*/React.createElement(React.StrictMode, null, /*#__PURE__*/React.createElement(Navigation, null)), document.getElementById("react_nav"));
 
+if(target == null || galleryPage!=null){
+
+  changeNavStatus("gallery"); 
+
+  ReactDOM.render( /*#__PURE__*/React.createElement(React.StrictMode, null, /*#__PURE__*/React.createElement(Navgallery, null)), document.getElementById("react-nav-gallery"));
+
+}
+if( !(target == null || target == "about" || target=="resume") ){
+    changeNavStatus("none");
+
+}
+
 switch(target){
   case null:
-    document.getElementById("link-gallery").classList.add("style-selected");
-    document.getElementById("link-about").classList.remove("style-selected");
-    document.getElementById("link-resume").classList.remove("style-selected");    
-
-    ReactDOM.render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(React.StrictMode, null, 
-      /*#__PURE__*/React.createElement(WorkPrev, {
-        href: "index.html?content=riskmap",
-        imgSrc: "img/banner-riskmap.png",
-        title: "529 Garage Risk Map Project",
-        type: "Full Stack Website",
-        skills: "HTML | CSS | JQuery | PHP | MySQL",
-        context: "School Project, Individual, 2022"
-      }), 
-      /*#__PURE__*/React.createElement(WorkPrev, {
-        href: "index.html?content=garage",
-        imgSrc: "img/banner-garage.png",
-        title: "Garage, Artwork Sharing Platform",
-        type: "Full Stack Website",
-        skills: "HTML | CSS | JQuery | PHP | MySQL",
-        context: "School Project, Group, 2022"
-      }),
-      /*#__PURE__*/React.createElement(WorkPrev, {
-        href: "index.html?content=edusim",
-        imgSrc: "img/banner-edusim.png",
-        title: "PRC Education Simulator",
-        type: "Java Mini Game",
-        skills: "Java",
-        context: "School Project, Individual, 2020"
-      })
-      )), document.getElementById("root"));
+    changeNavStatus("gallery");  
     break;
 
   case "about":
-    document.getElementById("link-about").classList.add("style-selected");
-    document.getElementById("link-gallery").classList.remove("style-selected");
-    document.getElementById("link-resume").classList.remove("style-selected");    
+    changeNavStatus("about");   
 
     page_title.innerHTML='About Me';
     sendXHR("GET", "./articles/about.txt", null, (response)=>{
@@ -68,9 +77,7 @@ switch(target){
     break;
 
   case "resume":
-    document.getElementById("link-resume").classList.add("style-selected");
-    document.getElementById("link-gallery").classList.remove("style-selected");
-    document.getElementById("link-about").classList.remove("style-selected");  
+    changeNavStatus("resume");
 
     page_title.innerHTML='Resume';
     sendXHR("GET", "./articles/resume.txt", null, (response)=>{
@@ -125,7 +132,37 @@ switch(target){
       document.getElementById('section-work-body').innerHTML=response;
     });
     break;
+}
 
+switch(galleryPage){
+  case null:
+      ReactDOM.render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(React.StrictMode, null, 
+      /*#__PURE__*/React.createElement(WorkPrev, {
+        href: "index.html?content=riskmap",
+        imgSrc: "img/banner-riskmap.png",
+        title: "529 Garage Risk Map Project",
+        type: "Full Stack Website",
+        skills: "HTML | CSS | JQuery | PHP | MySQL",
+        context: "School Project, Individual, 2022"
+      }), 
+      /*#__PURE__*/React.createElement(WorkPrev, {
+        href: "index.html?content=garage",
+        imgSrc: "img/banner-garage.png",
+        title: "Garage, Artwork Sharing Platform",
+        type: "Full Stack Website",
+        skills: "HTML | CSS | JQuery | PHP | MySQL",
+        context: "School Project, Group, 2022"
+      }),
+      /*#__PURE__*/React.createElement(WorkPrev, {
+        href: "index.html?content=edusim",
+        imgSrc: "img/banner-edusim.png",
+        title: "PRC Education Simulator",
+        type: "Java Mini Game",
+        skills: "Java",
+        context: "School Project, Individual, 2020"
+      })
+      )), document.getElementById("root"));
+      break;
   case "uiux":
     document.getElementById("link-web").classList.remove("style-selected");
     document.getElementById("link-uiux").classList.add("style-selected");
@@ -138,8 +175,4 @@ switch(target){
     break;
 }
 
-if( !(target == null || target == "about" || target=="resume") ){
-    document.getElementById("link-resume").classList.remove("style-selected");
-    document.getElementById("link-gallery").classList.remove("style-selected");
-    document.getElementById("link-about").classList.remove("style-selected");  
-}
+

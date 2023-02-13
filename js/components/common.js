@@ -55,3 +55,20 @@ const Navigation = () => {
 })))
 );
 };
+
+
+const Navgallery = () => {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("a", {
+    href: "index.html",
+    class: "style-selected",
+    id: "link-web"
+  }, "Web Development"), /*#__PURE__*/React.createElement("a", {
+    href: "index.html?gpage=uiux",
+    class: "style-navGallery-selected",
+    id: "link-uiux"
+  }, "UI/UX Design"), /*#__PURE__*/React.createElement("a", {
+    href: "index.html?gpage=art",
+    class: "style-navGallery-selected",
+    id: "link-art"
+  }, "Artworks"));
+};
