@@ -125,6 +125,17 @@ switch(target){
       document.getElementById('section-work-body').innerHTML=response;
     });
     break;
+
+  case "uiux":
+    document.getElementById("link-web").classList.remove("style-selected");
+    document.getElementById("link-uiux").classList.add("style-selected");
+    document.getElementById("link-art").classList.remove("style-selected");   
+    break;
+  case "art":
+    document.getElementById("link-web").classList.remove("style-selected");
+    document.getElementById("link-uiux").classList.remove("style-selected");
+    document.getElementById("link-art").classList.add("style-selected");   
+    break;
 }
 
 if( !(target == null || target == "about" || target=="resume") ){
