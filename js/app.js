@@ -132,6 +132,20 @@ switch(target){
       document.getElementById('section-work-body').innerHTML=response;
     });
     break;
+
+  case "isaBanner":
+    page_title.innerHTML="Research Institute Website Banners";
+    ReactDOM.render(/*#__PURE__*/React.createElement(WorkIntroGraphicDes, {
+        type: "Graphic Design",
+        skills: "Photoshop",
+        context: "Internship Project, Individual, 2022"
+      }), document.getElementById("root")
+    );
+
+    sendXHR("GET", "./articles/works/graphic/isaBanner.txt", null, (response)=>{
+      document.getElementById('section-work-body').innerHTML=response;
+    });
+    break;
 }
 
 switch(galleryPage){
@@ -178,7 +192,7 @@ switch(galleryPage){
 
     ReactDOM.render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(React.StrictMode, null, 
     /*#__PURE__*/React.createElement(WorkPrev, {
-      href: "index.html?content=#",
+      href: "index.html?content=isaBanner",
       imgSrc: "img/banner-isaBanners.png",
       title: "Research Institute Website Banners",
       type: "Graphic Design",

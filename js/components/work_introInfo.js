@@ -32,3 +32,25 @@ const WorkIntro=(props)=>{
 		);
 
 }
+
+const WorkIntroGraphicDes=(props)=>{
+	return /*#__PURE__*/React.createElement("div", {
+		  class: "flex flex-column section-work"
+		},  /*#__PURE__*/React.createElement("div", {
+		  class: "section-work-basics graphic"
+		}, /*#__PURE__*/React.createElement("p", {
+		  id: "work-type",
+		  class: "p-type"
+		}, props.type), /*#__PURE__*/React.createElement("p", {
+		  id: "work-skill"
+		}, props.skills), /*#__PURE__*/React.createElement("p", {
+		  id: "work-desc"
+		}, 
+
+		props.context)), /*#__PURE__*/React.createElement("div", {
+		  id: "section-work-body"
+		})
+
+		);
+
+}
