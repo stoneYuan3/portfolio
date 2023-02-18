@@ -196,12 +196,10 @@ switch(galleryPage){
       break;
   case "uiux":
     document.getElementById("link-web").classList.remove("style-selected");
-    document.getElementById("link-uiux").classList.add("style-selected");
     document.getElementById("link-art").classList.remove("style-selected");   
     break;
   case "art":
     document.getElementById("link-web").classList.remove("style-selected");
-    document.getElementById("link-uiux").classList.remove("style-selected");
     document.getElementById("link-art").classList.add("style-selected");   
 
     ReactDOM.render( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(React.StrictMode, null, 
