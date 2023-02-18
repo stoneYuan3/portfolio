@@ -64,6 +64,15 @@ html{
     width: 9rem;
     text-align: center;
 }
+
+.button-general{
+    border-radius: 1rem;
+    padding:0.5rem 1rem;
+    background-color: #191919;
+    color: white;
+    width: fit-content;
+}
+
 .section-galleryWork .p-type{
     margin-bottom: 1rem !important;
 }
@@ -427,5 +436,15 @@ html{
     }     
     .section-mybio div{
         width: 100%;
+    }
+
+    #react-nav-gallery{
+        justify-content: center;
+    }
+    #react-nav-gallery a{
+        margin-bottom: 0.75rem;
+    }
+    #work-skill,#work-desc{
+        line-height: 2.75rem;
     }
 }

@@ -1,0 +1,39 @@
+
+Background
+
+this project is the final project of a user experience and interface design course that lasts for 6-7 weeks. It is done with a group of five. The task for this project is to research an industry and develop a digital solution (such as an app) for a problem found in this industry.
+
+The industry we choose was agriculture and the problem we land on is the lack of connection between members in community garden.
+
+
+final outcome vid
+<>
+
+
+Process
+The initial problem that we were focusing on is the lack of connection between small farmers and consumers, where user researches with some local small farm businesses shows that some small farmers complained about their public exposure. 
+
+OUr initial idea was to develop a local farm map and online farm market, but we soon find that existing platforms such as Etsy already solves the issue to some extent.
+
+<farm market img>
+
+We then went back to some abandonded brainstorming ideas we had before. Some of our brainstorming ideas involves setting up information board in community garden and encourage bartering within the local garden enthuasist community. We visited some community gardens to explore those possibilities.
+
+<photos>
+
+During our visit, we found an issue with community gardens that we havent realize before: Although community gardens are meant to be a place to build community, the lack of communication infanstructure and the fact that gardeners visit their garden in their own time makes it hard to know other garden users. 
+
+We interviewed some garden users, and find that they generally only know about 2-3 people in the garden, which is roughly 30% of the entire community. 
+
+although it may be enough for simple helps such as help watering, users are not able to reach out to the entire community for potencial experts or just to build a sense of community
+
+ Interview result also shows that community garden users feel frustrated that it is hard to reach out to anybody for helps. Community garden in this sense, is just a garden that happens to be public.
+
+This inspires us to get into the topic of community building for community gardens. The result we propose is a community garden mananger, a platform that helps gardeners to monitor the status of their plants remotely, know who else is in the garden, and of course reach out for help and organize collective events that builds the community.
+
+<images of app>
+
+
+
+
+
