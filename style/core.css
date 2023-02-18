@@ -45,10 +45,13 @@ html{
 #react-nav-gallery{
     margin-bottom: 2rem;
 }
-#react-nav-gallery a{
+#react-nav-gallery a,#react-nav-gallery button{
     margin-right: 1.25rem;
     color:grey;
     padding-bottom: 0.25rem;
+    border:none;
+    background: none;
+    border-bottom: 3px solid transparent;
 }
 #react-nav-gallery .style-selected{
     font-weight: bold;
@@ -441,7 +444,7 @@ html{
     #react-nav-gallery{
         justify-content: center;
     }
-    #react-nav-gallery a{
+    #react-nav-gallery a,#react-nav-gallery button{
         margin-bottom: 0.75rem;
     }
     #work-skill,#work-desc{
